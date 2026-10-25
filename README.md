@@ -96,3 +96,13 @@ The `scripts/` folder and this README can be uploaded too; they are harmless.
 Facts and quotes come from heartstoneinn.com (rooms, dining, specials, plan-your-stay and reviews
 pages, as indexed in October 2026). Innkeeper names, prices and the booking link came from the brief.
 Confirm rates, room features and policies with the owners before launch.
+
+## Current walkthrough
+
+The hero uses a 12-second AI-generated demo walkthrough of a Victorian hotel (porch → foyer →
+hallway → guest room), made on OpenArt. It is not footage of Heartstone Inn, so the hero shows a small
+"Concept walkthrough" tag (remove it in `index.html` once a real video is in).
+
+To swap in another video without running ffmpeg yourself, put its download link in
+`assets/video/SOURCE_URL.txt` and push: the "Import walkthrough video" GitHub Action downloads it,
+runs `scripts/build-frames.sh` and commits the frames.
