@@ -7,13 +7,13 @@ Wide photos with a grey strip along the bottom: crop the strip off first.
 ## In place now
 | File | Section | Photo |
 |---|---|---|
-| town-square.jpg | Our Story | Downtown fountain and benches |
+| town-square.jpg | (spare) | Downtown fountain and benches |
 | breakfast-1.jpg | Breakfast (large tile) | Plated breakfast: eggs, sausage, grits, fruit |
 | breakfast-2.jpg | Breakfast | Crop of the same plate (fruit) |
 | breakfast-3.jpg | Breakfast | Crop of the same plate (juice + flowers) |
 | gazebo.jpg | Weddings + stand-in walkthrough (3rd) | Victorian gazebo in a garden |
 | grounds-forest.jpg | Stand-in walkthrough (4th) | Limestone ledge in the woods |
-| exterior.jpg | Hero poster + stand-in walkthrough (1st) | The house: two-storey porch, lawn and big tree (694 px wide, ask for the original) |
+| exterior.jpg | Our Story + hero poster + stand-in walkthrough (1st) | The house: two-storey porch, lawn and big tree (694 px wide, ask for the original) |
 | porch.jpg | Stand-in walkthrough (2nd) | Front door and porch with hedges (600 px wide, ask for the original) |
 
 ## Waiting for the file (re-send these)
