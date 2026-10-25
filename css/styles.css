@@ -237,7 +237,7 @@ html:not(.js) .preloader { display: none; }
 
 .carousel {
   --card-w: clamp(214px, 60vw, 300px);
-  position: relative; height: calc(var(--card-w) * 1.25 + 150px);
+  position: relative; height: calc(var(--card-w) * 1.25 + 190px);
   perspective: 1100px; perspective-origin: 50% 40%;
   touch-action: pan-y; user-select: none; -webkit-user-select: none; cursor: grab;
   flex: none;
@@ -264,7 +264,8 @@ html:not(.js) .preloader { display: none; }
 .card__media img { width: 100%; height: 100%; object-fit: cover; }
 .card__body { padding: 16px 18px 20px; text-align: center; }
 .card__body h3 { font-family: var(--serif); font-size: 1.55rem; line-height: 1.15; color: var(--burgundy); }
-.card__price { margin: 4px 0 14px; font-size: .78rem; letter-spacing: .1em; color: var(--muted); text-transform: uppercase; }
+.card__feat { margin: 6px auto 0; max-width: 24ch; font-size: .78rem; line-height: 1.45; color: var(--muted); min-height: 2.9em; }
+.card__price { margin: 8px 0 14px; font-size: .78rem; letter-spacing: .1em; color: var(--muted); text-transform: uppercase; }
 .card__price strong { color: var(--charcoal); font-weight: 600; letter-spacing: .04em; font-size: .9rem; }
 .card__shade { position: absolute; inset: 0; background: var(--burgundy-deep); opacity: 0; pointer-events: none; }
 .card.is-front .card__inner { box-shadow: 0 44px 80px -30px rgba(62, 18, 28, .5), 0 18px 30px -18px rgba(62, 18, 28, .3); }
@@ -286,7 +287,8 @@ html:not(.js) .preloader { display: none; }
 
 @media (max-height: 700px) and (max-width: 959px) {
   .card__media { aspect-ratio: 1 / 1; }
-  .carousel { height: calc(var(--card-w) + 150px); }
+  .carousel { height: calc(var(--card-w) * .9 + 190px); }
+  .card__media { aspect-ratio: 10 / 9 !important; }
   .rooms__sticky { gap: 12px; }
 }
 
@@ -337,6 +339,10 @@ html:not(.js) .preloader { display: none; }
 .breakfast__item { aspect-ratio: 4 / 5; }
 .breakfast__item--a { grid-column: 1 / -1; aspect-ratio: 3 / 2; }
 
+.lede { margin: 26px auto 0; max-width: 58ch; font-size: 1rem; color: #4A4242; }
+.press { margin-top: 22px; font-family: var(--serif); font-style: italic; font-size: 1.35rem; color: var(--burgundy); }
+.press span { display: block; margin-top: 4px; font-family: var(--sans); font-style: normal; font-size: .64rem; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
+
 /* =========================================================
    WEDDINGS
    ========================================================= */
@@ -346,6 +352,7 @@ html:not(.js) .preloader { display: none; }
 .weddings__media.img-missing::after { display: none; }
 .weddings__content { position: relative; z-index: 2; padding: 90px var(--gutter); max-width: 720px; }
 .weddings .divider::after { background: var(--burgundy); }
+.weddings__text { margin: -8px auto 30px; max-width: 52ch; font-size: .95rem; line-height: 1.75; color: rgba(246, 239, 228, .86); }
 .weddings__pkg { margin: 26px 0 30px; font-size: .8rem; letter-spacing: .24em; text-transform: uppercase; line-height: 1.9; color: rgba(246, 239, 228, .92); }
 
 /* =========================================================
@@ -363,6 +370,18 @@ html:not(.js) .preloader { display: none; }
 .review__stars { color: var(--gold); letter-spacing: .3em; font-size: .9rem; }
 .review blockquote { margin: 14px 0 16px; font-family: var(--serif); font-size: 1.3rem; line-height: 1.35; font-style: italic; color: var(--charcoal); }
 .review__by { font-size: .66rem; letter-spacing: .26em; text-transform: uppercase; color: var(--muted); }
+.review__mark { color: var(--gold); font-size: 1rem; }
+.review--award blockquote { font-style: normal; font-weight: 500; color: var(--burgundy); }
+
+/* ---------- plan your stay ---------- */
+.plan { background: var(--cream); padding: 88px var(--gutter); }
+.plan__grid { list-style: none; margin: 44px auto 0; padding: 0; max-width: var(--max); display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--gold-soft); border: 1px solid var(--gold-soft); }
+.plan__grid li { background: var(--cream); padding: 22px 22px 24px; display: flex; flex-direction: column; gap: 6px; }
+.plan__grid strong { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; color: var(--burgundy); }
+.plan__grid span { font-size: .92rem; color: #4A4242; }
+@media (min-width: 720px) { .plan__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .plan { padding: 120px var(--gutter); } .plan__grid { grid-template-columns: repeat(3, 1fr); } .plan__grid li { padding: 30px 30px 32px; } }
+
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 /* =========================================================

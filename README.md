@@ -90,3 +90,9 @@ The `scripts/` folder and this README can be uploaded too; they are harmless.
 - Reviews: search `index.html` for `REPLACE WITH REAL REVIEW`. Also update the duplicated list just
   below it (it makes the marquee loop seamlessly).
 - Any missing photo shows as a labelled burgundy panel instead of a broken image.
+
+## Content sources
+
+Facts and quotes come from heartstoneinn.com (rooms, dining, specials, plan-your-stay and reviews
+pages, as indexed in October 2026). Innkeeper names, prices and the booking link came from the brief.
+Confirm rates, room features and policies with the owners before launch.
