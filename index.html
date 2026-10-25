@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Private demo: keep it out of search engines -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Heartstone Inn Bed &amp; Breakfast and Cottages · Eureka Springs, Arkansas</title>
+  <meta name="description" content="A 1903 Victorian bed &amp; breakfast on the National Register of Historic Places, on the Historic Loop in Eureka Springs, Arkansas.">
+  <meta name="theme-color" content="#5B1E2B">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%235B1E2B'/%3E%3Cpath d='M14 34 32 18l18 16' fill='none' stroke='%23B8925A' stroke-width='4'/%3E%3Ctext x='32' y='54' font-family='Georgia,serif' font-size='22' fill='%23F6EFE4' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+
+  <script>
+    // Flag JS, and swap any missing optimised photo for its original (then a styled placeholder).
+    document.documentElement.classList.add('js');
+    document.addEventListener('error', function (e) {
+      var el = e.target;
+      if (!el || el.tagName !== 'IMG') return;
+      var fb = el.getAttribute('data-fallback');
+      if (fb && !el.getAttribute('data-tried')) {
+        el.setAttribute('data-tried', '1');
+        el.removeAttribute('srcset');
+        el.src = fb;
+        return;
+      }
+      if (el.parentNode) el.parentNode.classList.add('img-missing');
+    }, true);
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <div class="topbar">
+    <div class="topbar__inner">
+      <div class="topbar__group">
+        <a href="tel:+14792538916"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>479-253-8916</a>
+        <a href="mailto:info@heartstoneinn.com"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>info@heartstoneinn.com</a>
+      </div>
+      <div class="topbar__group">
+        <span>On the Historic Loop · Eureka Springs, AR</span>
+        <a href="#weddings">Weddings</a>
+        <a href="#reviews">Guest Reviews</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="brandrow">
+    <a class="logo" href="#top" aria-label="Heartstone Inn, back to top">
+      <svg class="logo__roof" viewBox="0 0 120 34" aria-hidden="true"><path d="M8 32 60 5l52 27" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M84 18V7h8v15" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
+      <span class="logo__name">Heartstone Inn</span>
+      <span class="logo__tag">Bed &amp; Breakfast · Cottages · Est. 1903</span>
+    </a>
+  </div>
+
+  <header class="navbar" id="top">
+    <div class="navbar__inner">
+      <a class="navbar__call" href="tel:+14792538916" aria-label="Call Heartstone Inn at 479-253-8916">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+        <span class="navbar__num">479-253-8916</span>
+      </a>
+      <a class="navbar__brand" href="#top">Heartstone Inn</a>
+      <nav class="navbar__nav" aria-label="Main">
+        <a href="#walkthrough">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#story">Our Story</a>
+        <a href="#breakfast">Breakfast</a>
+        <a href="#weddings">Weddings</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn--gold btn--sm navbar__book" href="https://reserve4.resnexus.com/resnexus/reservations/lodging/25CC209D-3CEB-4EA9-890A-4B3BA6A43677?&amp;tabID=1" target="_blank" rel="noopener">Book Now</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ SCROLL-DRIVEN WALKTHROUGH HERO ============ -->
+    <section class="hero" id="walkthrough" aria-label="Walkthrough of Heartstone Inn">
+      <div class="hero__stage">
+        <canvas class="hero__canvas" aria-hidden="true"></canvas>
+        <video class="hero__video" muted playsinline loop preload="none" aria-hidden="true">
+          <!-- Compressed copy made by scripts/build-frames.sh, then the original -->
+          <source data-src="assets/video/walkthrough-web.mp4" type="video/mp4">
+          <source data-src="assets/video/walkthrough.mp4" type="video/mp4">
+        </video>
+        <div class="hero__scrim" aria-hidden="true"></div>
+
+        <div class="hero__captions">
+          <div class="cap is-on" data-cap="0">
+            <h1 class="cap__title">A 1903 Victorian retreat</h1>
+            <p class="cap__sub">National Register of Historic Places · Eureka Springs, Arkansas</p>
+            <a class="btn btn--gold cap__static-book" href="https://reserve4.resnexus.com/resnexus/reservations/lodging/25CC209D-3CEB-4EA9-890A-4B3BA6A43677?&amp;tabID=1" target="_blank" rel="noopener">Book Now</a>
+          </div>
+          <div class="cap" data-cap="1">
+            <p class="cap__title">Eleven rooms &amp; private cottages</p>
+            <p class="cap__sub">On the Historic Loop</p>
+          </div>
+          <div class="cap" data-cap="2">
+            <p class="cap__title">Breakfast made to order</p>
+            <p class="cap__sub">Cooked by innkeepers &amp; chefs Kyle &amp; Jesse</p>
+          </div>
+          <div class="cap" data-cap="3">
+            <p class="cap__title">Your stay begins here</p>
+            <a class="btn btn--gold" href="https://reserve4.resnexus.com/resnexus/reservations/lodging/25CC209D-3CEB-4EA9-890A-4B3BA6A43677?&amp;tabID=1" target="_blank" rel="noopener">Book Now</a>
+          </div>
+        </div>
+
+        <div class="hero__hint" aria-hidden="true"><span>Scroll to walk through</span><i></i></div>
+        <div class="hero__hd" aria-hidden="true"><span></span></div>
+
+        <div class="preloader" role="status" aria-live="polite">
+          <div class="preloader__inner">
+            <span class="preloader__name">Heartstone Inn</span>
+            <span class="preloader__pct">0%</span>
+            <span class="preloader__bar"><i></i></span>
+            <span class="preloader__label">Preparing your walkthrough</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ROOMS IN 3D ============ -->
+    <section class="rooms" id="rooms" aria-label="Featured rooms and cottages">
+      <div class="rooms__sticky">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Stay with us</p>
+          <h2>Rooms &amp; Cottages</h2>
+          <span class="divider" aria-hidden="true"></span>
+        </div>
+
+        <div class="carousel" tabindex="0" aria-roledescription="carousel" aria-label="Rooms. Use arrow keys or swipe to browse.">
+          <div class="carousel__ring">
+            <article class="card" data-i="0">
+              <div class="card__inner">
+                <div class="card__media media" data-label="Garden View"><img src="assets/photos/optimized/garden-view-800.webp" data-fallback="assets/photos/garden-view.jpg" alt="Garden View room" width="800" height="1000" loading="lazy" decoding="async"></div>
+                <div class="card__body"><h3>Garden View</h3><p class="card__price">from <strong>$185</strong>/night</p><a class="btn btn--gold btn--sm" href="https://reserve4.resnexus.com/resnexus/reservations/lodging/25CC209D-3CEB-4EA9-890A-4B3BA6A43677?&amp;tabID=1" target="_blank" rel="noopener">Book</a></div>
+              </div>
+              <span class="card__shade" aria-hidden="true"></span>
+            </article>
+            <article class="card" data-i="1">
+              <div class="card__inner">
+                <div class="card__media media" data-label="Edwardian Suite"><img src="assets/photos/optimized/edwardian-suite-800.webp" data-fallback="assets/photos/edwardian-suite.jpg" alt="Edwardian Suite" width="800" height="1000" loading="lazy" decoding="async"></div>
+                <div class="card__body"><h3>Edwardian Suite</h3><p class="card__price">from <strong>$215</strong>/night</p><a class="btn btn--gold btn--sm" href="https://reserve4.resnexus.com/resnexus/reservations/lodging/25CC209D-3CEB-4EA9-890A-4B3BA6A43677?&amp;tabID=1" target="_blank" rel="noopener">Book</a></div>
+              </div>
+              <span class="card__shade" aria-hidden="true"></span>
+            </article>
+            <article class="card" data-i="2">
+              <div class="card__inner">
+                <div class="card__media media" data-label="Floral Bouquet"><img src="assets/photos/optimized/floral-bouquet-800.webp" data-fallback="assets/photos/floral-bouquet.jpg" alt="Floral Bouquet room" width="800" height="1000" loading="lazy" decoding="async"></div>
+                <div class="card__body"><h3>Floral Bouquet</h3><p class="card__price">from <strong>$225</strong>/night</p><a class="btn btn--gold btn--sm" href="https://reserve4.resnexus.com/resnexus/reservations/lodging/25CC209D-3CEB-4EA9-890A-4B3BA6A43677?&amp;tabID=1" target="_blank" rel="noopener">Book</a></div>
+              </div>
+              <span class="card__shade" aria-hidden="true"></span>
+            </article>
+            <article class="card" data-i="3">
+              <div class="card__inner">
+                <div class="card__media media" data-label="Regal Suite"><img src="assets/photos/optimized/regal-suite-800.webp" data-fallback="assets/photos/regal-suite.jpg" alt="Regal Suite" width="800" height="1000" loading="lazy" decoding="async"></div>
+                <div class="card__body"><h3>Regal Suite</h3><p class="card__price">from <strong>$235</strong>/night</p><a class="btn btn--gold btn--sm" href="https://reserve4.resnexus.com/resnexus/reservations/lodging/25CC209D-3CEB-4EA9-890A-4B3BA6A43677?&amp;tabID=1" target="_blank" rel="noopener">Book</a></div>
+              </div>
+              <span class="card__shade" aria-hidden="true"></span>
+            </article>
+            <article class="card" data-i="4">
+              <div class="card__inner">
+                <div class="card__media media" data-label="Country Cottage"><img src="assets/photos/optimized/country-cottage-800.webp" data-fallback="assets/photos/country-cottage.jpg" alt="Country Cottage" width="800" height="1000" loading="lazy" decoding="async"></div>
+                <div class="card__body"><h3>Country Cottage</h3><p class="card__price">from <strong>$245</strong>/night</p><a class="btn btn--gold btn--sm" href="https://reserve4.resnexus.com/resnexus/reservations/lodging/25CC209D-3CEB-4EA9-890A-4B3BA6A43677?&amp;tabID=1" target="_blank" rel="noopener">Book</a></div>
+              </div>
+              <span class="card__shade" aria-hidden="true"></span>
+            </article>
+            <article class="card" data-i="5">
+              <div class="card__inner">
+                <div class="card__media media" data-label="Victoria House"><img src="assets/photos/optimized/victoria-house-800.webp" data-fallback="assets/photos/victoria-house.jpg" alt="Victoria House" width="800" height="1000" loading="lazy" decoding="async"></div>
+                <div class="card__body"><h3>Victoria House</h3><p class="card__price">from <strong>$299</strong>/night</p><a class="btn btn--gold btn--sm" href="https://reserve4.resnexus.com/resnexus/reservations/lodging/25CC209D-3CEB-4EA9-890A-4B3BA6A43677?&amp;tabID=1" target="_blank" rel="noopener">Book</a></div>
+              </div>
+              <span class="card__shade" aria-hidden="true"></span>
+            </article>
+          </div>
+          <div class="carousel__floor" aria-hidden="true"></div>
+        </div>
+
+        <div class="carousel__controls">
+          <button class="arrow" type="button" data-dir="-1" aria-label="Previous room"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+          <p class="carousel__count" aria-live="polite"><span class="carousel__now">01</span> / 06</p>
+          <button class="arrow" type="button" data-dir="1" aria-label="Next room"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OUR STORY ============ -->
+    <section class="story" id="story">
+      <div class="story__media media zoom" data-label="Heartstone Inn, 1903">
+        <img data-parallax="12" src="assets/photos/optimized/exterior-1600.webp" srcset="assets/photos/optimized/exterior-800.webp 800w, assets/photos/optimized/exterior-1600.webp 1600w" sizes="100vw" data-fallback="assets/photos/exterior.jpg" alt="The 1903 Victorian house at Heartstone Inn" width="1600" height="1067" loading="lazy" decoding="async">
+      </div>
+      <div class="story__card" data-reveal>
+        <p class="eyebrow">Our Story</p>
+        <h2>Since 1903</h2>
+        <span class="divider" aria-hidden="true"></span>
+        <p>Built in 1903 and listed on the National Register of Historic Places, our Victorian home has watched over the Historic Loop of Eureka Springs for more than a century.</p>
+        <p>Today innkeepers and chefs Kyle &amp; Jesse, the Crossland family, welcome every guest as one of their own.</p>
+        <p class="signature">Kyle &amp; Jesse</p>
+      </div>
+    </section>
+
+    <!-- ============ BREAKFAST ============ -->
+    <section class="breakfast" id="breakfast">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Breakfast</p>
+        <h2>Award-winning gourmet breakfast, served at your own private table.</h2>
+        <span class="divider" aria-hidden="true"></span>
+      </div>
+      <div class="breakfast__grid">
+        <figure class="breakfast__item breakfast__item--a media zoom" data-label="Breakfast">
+          <img data-parallax="8" src="assets/photos/optimized/breakfast-1-800.webp" srcset="assets/photos/optimized/breakfast-1-800.webp 800w, assets/photos/optimized/breakfast-1-1600.webp 1600w" sizes="(min-width: 960px) 50vw, 100vw" data-fallback="assets/photos/breakfast-1.jpg" alt="Gourmet breakfast plate" width="1600" height="1067" loading="lazy" decoding="async">
+        </figure>
+        <figure class="breakfast__item breakfast__item--b media zoom" data-label="Breakfast">
+          <img data-parallax="14" src="assets/photos/optimized/breakfast-2-800.webp" data-fallback="assets/photos/breakfast-2.jpg" alt="Freshly baked breakfast pastries" width="800" height="1000" loading="lazy" decoding="async">
+        </figure>
+        <figure class="breakfast__item breakfast__item--c media zoom" data-label="Breakfast">
+          <img data-parallax="10" src="assets/photos/optimized/breakfast-3-800.webp" data-fallback="assets/photos/breakfast-3.jpg" alt="A private breakfast table for two" width="800" height="1000" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ WEDDINGS TEASER ============ -->
+    <section class="weddings" id="weddings">
+      <div class="weddings__media media" data-label="Garden gazebo">
+        <img data-parallax="10" src="assets/photos/optimized/gazebo-1600.webp" srcset="assets/photos/optimized/gazebo-800.webp 800w, assets/photos/optimized/gazebo-1600.webp 1600w" sizes="100vw" data-fallback="assets/photos/gazebo.jpg" alt="The garden gazebo at Heartstone Inn" width="1600" height="1067" loading="lazy" decoding="async">
+      </div>
+      <div class="weddings__content" data-reveal>
+        <p class="eyebrow eyebrow--light">Weddings</p>
+        <h2>Say &lsquo;I do&rsquo; in our garden gazebo</h2>
+        <span class="divider" aria-hidden="true"></span>
+        <p class="weddings__pkg">Sweet &amp; Simple Wedding Package &ndash; $349</p>
+        <a class="btn btn--outline-light" href="mailto:info@heartstoneinn.com?subject=Sweet%20%26%20Simple%20Wedding%20Package">Ask about your date</a>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="reviews" id="reviews" aria-label="Guest reviews">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Guest Reviews</p>
+        <h2>Five stars from our guests</h2>
+        <span class="divider" aria-hidden="true"></span>
+      </div>
+      <div class="marquee">
+        <div class="marquee__track">
+          <ul class="marquee__list">
+            <!-- REPLACE WITH REAL REVIEW -->
+            <li class="review"><p class="review__stars" aria-label="5 out of 5 stars">★★★★★</p><blockquote>&ldquo;The most charming house on the Historic Loop. Breakfast alone is worth the trip.&rdquo;</blockquote><p class="review__by">Guest name · City, State</p></li>
+            <!-- REPLACE WITH REAL REVIEW -->
+            <li class="review"><p class="review__stars" aria-label="5 out of 5 stars">★★★★★</p><blockquote>&ldquo;Kyle &amp; Jesse made us feel like family from the moment we arrived.&rdquo;</blockquote><p class="review__by">Guest name · City, State</p></li>
+            <!-- REPLACE WITH REAL REVIEW -->
+            <li class="review"><p class="review__stars" aria-label="5 out of 5 stars">★★★★★</p><blockquote>&ldquo;Our cottage was spotless, quiet and full of character. We&rsquo;re already planning our return.&rdquo;</blockquote><p class="review__by">Guest name · City, State</p></li>
+            <!-- REPLACE WITH REAL REVIEW -->
+            <li class="review"><p class="review__stars" aria-label="5 out of 5 stars">★★★★★</p><blockquote>&ldquo;A private table, a three-course breakfast and a walk into town. A perfect weekend.&rdquo;</blockquote><p class="review__by">Guest name · City, State</p></li>
+          </ul>
+          <!-- Duplicate of the list above so the marquee loops seamlessly. Update both. -->
+          <ul class="marquee__list" aria-hidden="true">
+            <li class="review"><p class="review__stars">★★★★★</p><blockquote>&ldquo;The most charming house on the Historic Loop. Breakfast alone is worth the trip.&rdquo;</blockquote><p class="review__by">Guest name · City, State</p></li>
+            <li class="review"><p class="review__stars">★★★★★</p><blockquote>&ldquo;Kyle &amp; Jesse made us feel like family from the moment we arrived.&rdquo;</blockquote><p class="review__by">Guest name · City, State</p></li>
+            <li class="review"><p class="review__stars">★★★★★</p><blockquote>&ldquo;Our cottage was spotless, quiet and full of character. We&rsquo;re already planning our return.&rdquo;</blockquote><p class="review__by">Guest name · City, State</p></li>
+            <li class="review"><p class="review__stars">★★★★★</p><blockquote>&ldquo;A private table, a three-course breakfast and a walk into town. A perfect weekend.&rdquo;</blockquote><p class="review__by">Guest name · City, State</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="cta" id="book">
+      <div class="cta__inner" data-reveal>
+        <p class="eyebrow eyebrow--light">Reserve your stay</p>
+        <h2>Book Direct &ndash; Best Rate Guaranteed</h2>
+        <span class="divider" aria-hidden="true"></span>
+        <a class="btn btn--gold btn--lg" href="https://reserve4.resnexus.com/resnexus/reservations/lodging/25CC209D-3CEB-4EA9-890A-4B3BA6A43677?&amp;tabID=1" target="_blank" rel="noopener">Book Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="logo__name">Heartstone Inn</span>
+        <span class="logo__tag">Bed &amp; Breakfast and Cottages</span>
+      </div>
+      <address class="footer__contact">
+        <a href="https://maps.google.com/?q=35+Kingshighway,+Eureka+Springs,+AR+72632" target="_blank" rel="noopener">35 Kingshighway<br>Eureka Springs, AR 72632</a>
+        <a href="tel:+14792538916">479-253-8916</a>
+        <a href="mailto:info@heartstoneinn.com">info@heartstoneinn.com</a>
+      </address>
+    </div>
+    <div class="footer__base">
+      <p>&copy; 2026 Heartstone Inn Bed &amp; Breakfast and Cottages</p>
+      <p class="footer__credit">Website concept by Upward Web</p>
+    </div>
+  </footer>
+
+  <!-- ============ MOBILE BOOK BAR ============ -->
+  <div class="bookbar">
+    <a class="bookbar__call" href="tel:+14792538916" aria-label="Call 479-253-8916"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Call</a>
+    <a class="btn btn--gold bookbar__book" href="https://reserve4.resnexus.com/resnexus/reservations/lodging/25CC209D-3CEB-4EA9-890A-4B3BA6A43677?&amp;tabID=1" target="_blank" rel="noopener">Book Now</a>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
