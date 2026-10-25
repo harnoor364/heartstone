@@ -173,7 +173,7 @@
     preloader.classList.add('is-done');
     caps.forEach(function (c) { c.style.cssText = ''; c.classList.remove('is-on'); });
     $$('source', video).forEach(function (s) { s.src = s.getAttribute('data-src'); });
-    video.poster = 'assets/photos/optimized/grounds-forest-1600.webp';
+    video.poster = 'assets/photos/optimized/exterior-1600.webp';
     video.load();
     var play = video.play();
     if (play && play.catch) play.catch(function () { /* poster stays */ });
