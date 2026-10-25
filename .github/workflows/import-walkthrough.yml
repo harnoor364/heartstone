@@ -1,0 +1,31 @@
+# Downloads the walkthrough video named in assets/video/SOURCE_URL.txt,
+# rebuilds the hero scroll frames, and commits the result to this branch.
+# Runs when SOURCE_URL.txt changes, or manually from the Actions tab.
+name: Import walkthrough video
+on:
+  push:
+    paths: ["assets/video/SOURCE_URL.txt"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Download video
+        run: |
+          URL=$(grep -v '^#' assets/video/SOURCE_URL.txt | head -1 | tr -d '[:space:]')
+          curl -fsSL "$URL" -o assets/video/walkthrough.mp4
+          ffprobe -v error -show_entries format=duration -of csv=p=0 assets/video/walkthrough.mp4
+      - name: Build frames
+        run: bash scripts/build-frames.sh
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets/frames assets/video
+          git commit -m "Import walkthrough video and rebuild scroll frames" || echo "nothing to commit"
+          git push
