@@ -34,14 +34,14 @@ mkdir -p assets/frames/desktop assets/frames/mobile
 
 # Desktop: 24 fps, 1600 px wide
 ffmpeg -i assets/video/walkthrough.mp4 -an \
-  -vf "fps=24,scale=1600:-2:flags=lanczos" \
-  -c:v libwebp -quality 72 -compression_level 6 -preset photo \
+  -vf "fps=24,scale=1600:-2:flags=lanczos,gblur=sigma=0.5" \
+  -c:v libwebp -quality 60 -compression_level 6 -preset photo \
   -start_number 1 assets/frames/desktop/frame_%04d.webp
 
 # Mobile: 24 fps, 900 px wide, centre-cropped to portrait 9:16 (sharp on phones)
 ffmpeg -i assets/video/walkthrough.mp4 -an \
-  -vf "fps=24,crop='min(iw,ih*9/16)':ih,scale=900:-2:flags=lanczos" \
-  -c:v libwebp -quality 62 -compression_level 6 -preset photo \
+  -vf "fps=24,crop='min(iw,ih*9/16)':ih,scale=900:-2:flags=lanczos,gblur=sigma=0.5" \
+  -c:v libwebp -quality 55 -compression_level 6 -preset photo \
   -start_number 1 assets/frames/mobile/frame_%04d.webp
 
 # Small fallback video (reduced motion / slow data / frames fail)
@@ -64,7 +64,7 @@ To use a horizontal (non-cropped) mobile set instead, replace the mobile `-vf` w
 **Keep the walkthrough short.** 24 fps × 20 s = 480 frames. Expect about 100 KB per desktop frame
 and 60 KB per mobile frame, so 10–15 s of video (`TRIM=15`) is the sweet spot. The page loads a
 coarse pass first (every 6th frame), so scrubbing works within a second or two, then fills in the rest.
-Phones skip every other frame when a video has more than 240 frames.
+Phones skip every other frame when a video has more than 160 frames (desktops past 360).
 
 ## 2. Deploy on Netlify (drag and drop)
 

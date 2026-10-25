@@ -1,0 +1,5 @@
+{
+  "fps": 24,
+  "desktop": { "count": 240, "width": 1600, "path": "assets/frames/desktop/" },
+  "mobile":  { "count": 240, "width": 900,  "path": "assets/frames/mobile/" }
+}

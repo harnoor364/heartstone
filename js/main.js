@@ -173,7 +173,7 @@
     preloader.classList.add('is-done');
     caps.forEach(function (c) { c.style.cssText = ''; c.classList.remove('is-on'); });
     $$('source', video).forEach(function (s) { s.src = s.getAttribute('data-src'); });
-    video.poster = 'assets/photos/optimized/exterior-1600.webp';
+    video.poster = 'assets/photos/optimized/grounds-forest-1600.webp';
     video.load();
     var play = video.play();
     if (play && play.catch) play.catch(function () { /* poster stays */ });
@@ -208,8 +208,8 @@
         var src = function (i) { return path + 'frame_' + String(i + 1).padStart(4, '0') + '.webp'; };
 
         // Load order: first frame, then a coarse pass (every 6th), then fill in.
-        // On phones with long videos, skip every other frame to save data.
-        var stride = small && frameCount > 240 ? 2 : 1;
+        // Long sequences: phones load every other frame (still smooth), desktops only past 15 s.
+        var stride = (small && frameCount > 160) || frameCount > 360 ? 2 : 1;
         var keyStep = 6;
         var order = [0], seen = { 0: 1 }, keyCount;
         for (var k = keyStep; k < frameCount; k += keyStep) { order.push(k); seen[k] = 1; }

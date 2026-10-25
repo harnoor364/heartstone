@@ -7,7 +7,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-SRC="assets/video/walkthrough.mp4"
+SRC="${SRC:-assets/video/walkthrough.mp4}"
 [ -f "$SRC" ] || { echo "Missing $SRC"; exit 1; }
 TRIM_ARGS=()
 [ -n "${TRIM:-}" ] && TRIM_ARGS=(-t "$TRIM")
@@ -17,14 +17,14 @@ mkdir -p assets/frames/desktop assets/frames/mobile
 
 # Desktop: 24 fps, 1600px wide, keeps the video's aspect ratio
 ffmpeg -hide_banner -loglevel error -i "$SRC" "${TRIM_ARGS[@]}" -an \
-  -vf "fps=24,scale=1600:-2:flags=lanczos" \
-  -c:v libwebp -quality 72 -compression_level 6 -preset photo \
+  -vf "fps=24,scale=1600:-2:flags=lanczos,gblur=sigma=0.5" \
+  -c:v libwebp -quality 60 -compression_level 6 -preset photo \
   -start_number 1 assets/frames/desktop/frame_%04d.webp
 
 # Mobile: 24 fps, 900px wide, centre-cropped to portrait 9:16 so it stays sharp on phones
 ffmpeg -hide_banner -loglevel error -i "$SRC" "${TRIM_ARGS[@]}" -an \
-  -vf "fps=24,crop='min(iw,ih*9/16)':ih,scale=900:-2:flags=lanczos" \
-  -c:v libwebp -quality 62 -compression_level 6 -preset photo \
+  -vf "fps=24,crop='min(iw,ih*9/16)':ih,scale=900:-2:flags=lanczos,gblur=sigma=0.5" \
+  -c:v libwebp -quality 55 -compression_level 6 -preset photo \
   -start_number 1 assets/frames/mobile/frame_%04d.webp
 
 # Small fallback video (reduced-motion users, slow data, or if frames fail)
